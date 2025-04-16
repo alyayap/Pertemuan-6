@@ -4,6 +4,7 @@ $tujuan = ["Ngurah Rai", "Hasanuddin", "Inanwatan", "Sultan Iskandar Muda"];
 sort($asal);
 sort($tujuan);
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -24,7 +25,7 @@ sort($tujuan);
           </div>
           <div class="col-md-6">
             <label class="form-label">Tanggal Penerbangan</label>
-            <input type="date" class="form-control" name="tanggal" required>
+            <input type="date" class="form-control" name="tanggal" value="<?= date('Y-m-d') ?>" required>
           </div>
         </div>
 
@@ -50,8 +51,13 @@ sort($tujuan);
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Harga Tiket (Rp)</label>
-          <input type="number" class="form-control" name="harga" min="0" required>
+          <label class="form-label">Kelas Penerbangan</label>
+          <select class="form-select" name="kelas" required>
+            <option value="">-- Pilih Kelas Penerbangan --</option>
+            <option value="Ekonomi">Ekonomi (Rp 700.000)</option>
+            <option value="Bisnis">Bisnis (Rp 1.500.000)</option>
+            <option value="First Class">First Class (Rp 3.000.000)</option>
+          </select>
         </div>
 
         <div class="text-center">
