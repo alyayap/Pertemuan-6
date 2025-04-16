@@ -1,0 +1,40 @@
+.ticket-card {
+  background: linear-gradient(to right, #fce4ec, #e0f7fa);
+  border-radius: 25px;
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.6;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.ticket-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.ticket-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.total-section {
+  margin-top: 30px;
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4e342e;
+  text-align: center;
+}
